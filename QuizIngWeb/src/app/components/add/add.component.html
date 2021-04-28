@@ -1,0 +1,49 @@
+<br>
+
+<form [formGroup]="formulario" (ngsubmit)="Crear()">
+    <hr>
+    <ul>
+        <li>
+            <label>Nombre:</label>
+            <br>
+            <input formControlName="nombreCompleto" type="text">
+        </li>
+        <br>
+        <li>
+            <label>Genero:</label>
+            <br>
+            <input type="checkbox" name="checkbox1" formControlName="checkbox1"/>
+            <label for="checkbox1">Femenino</label>
+            <br>
+            <input type="checkbox" name="checkbox2" formControlName="checkbox2"/>
+            <label for="checkbox2">Masculino</label>
+            <br>
+            <input type="checkbox" name="checkbox4" formControlName="checkbox4"/>
+            <label for="checkbox4">Otre</label>
+            <br>
+        </li>
+        <li>
+            <label>Pais:</label>
+            <br>
+            <mat-form-field appearance="fill">
+                <select matNativeControl required>
+                  <option formControlName="pais">Chile</option>
+                  <option formControlName="pais">Peru</option>
+                  <option formControlName="pais">Brasil</option>
+                  <option formControlName="pais">Estados Unidos</option>
+                  <option formControlName="pais">Colombia</option>
+                </select>
+              </mat-form-field>
+        </li>
+        <li>
+            <label>Ciudad:</label>
+            <br>
+            <input formControlName="ciudad" type="text">
+        </li>
+        <br>
+
+        <button mat-stroked-button type="submit">Crear</button>
+        <button mat-stroked-button type="reset">Cancelar</button>
+
+    </ul>
+</form>

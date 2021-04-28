@@ -1,0 +1,32 @@
+<div class="centrar">
+<nav>
+    <div id="logo">
+        <ul>
+            <img src="/assets/img/imagen1.jpg">
+        </ul>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li> 
+                <img src="/assets/img/menu.jpg" alt="">
+                <a [routerLink]="['/perfiles']" routerLinkActive="router-link-active">    
+                    <button mat-stroked-button> Visual Card</button>
+                </a>         
+            </li>
+            <li>
+                <img src="/assets/img/menu.jpg" alt="">
+                <a [routerLink]="['/listausuarios']" routerLinkActive="router-link-active">
+                    <button mat-stroked-button>Lista Usuarios</button>
+                </a>
+            </li>
+            <li>
+                <img src="/assets/img/signo_+.jpg" alt="">
+                <a [routerLink]="['/agregarusuario']" routerLinkActive="router-link-active">
+                <button mat-stroked-button>Add</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>

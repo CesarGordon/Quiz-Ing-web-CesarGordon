@@ -1,0 +1,16 @@
+<br>
+<br>
+<ul id="usuarios">
+    <li *ngFor="let item of lista">
+        <div class="Box">
+            <div class="Foto">
+                <span *ngIf="item.genero.length==8"><img src="/assets/img/femenino.jpg"></span>
+                <span *ngIf="item.genero.length==9"><img src="/assets/img/masculino.jpg"></span>
+            </div>
+
+            <p>{{item.nombreCompleto}}</p>
+            <p>{{item.pais}},{{item.ciudad}}</p>
+
+        </div>
+    </li>
+</ul>
